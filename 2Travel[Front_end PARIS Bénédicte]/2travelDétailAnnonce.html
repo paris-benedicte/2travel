@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Travel_Détail Annonces</title>
+    <!--faire un lien faire le fichier css-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--faire un lien vers le fichier css media query pour le responsive-->
+    <link rel="stylesheet" href="../css/styles_media.css">
+
+    <!-- faire un lien vers le fichier css reboot-->
+    <link rel="stylesheet" href="../css/reboot.css">
+</head>
+<body>
+
+<!--on reprend notre menu de navigation qui reste le même que sur les deux autres pages-->
+<header class="container_nav">
+
+    <img class="image" src="../img/2travellogo.PNG" alt="logo 2Travel"> <!-- à dredimensionner en css, trop grand-->
+
+    <div class=" container_nav_ul_li">
+        <nav>
+            <ul class="ul_menu_nav">
+                <li class="li_menu_nav">connexion</li>
+                <li class="li_menu_nav">inscription</li>
+                    <img id ="loupe" src="../img/loupe.PNG" alt="Recherche de mots clés"> <!-- a redimensionner en css, trop grand-->
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main2">
+
+<section class="annonce_selection">
+    <h2 class="selection_title">
+        Annonce sélectionnée
+    </h2>
+
+    <div class="container_selection">
+
+        <div class="card_selection _items">
+
+            <div class="items_division1">
+                <img src="../img/Bonsai-Tree-In-Red-Planter-57248656-1.png" alt="Banzaï à transporter"><!-- a redimensionner -->
+            </div>
+
+            <div class="items_division2">
+                <img src="../img/etoile.PNG" alt="notations clients"><!-- a redimensionner -->
+            </div>
+
+            <div class="kilos_price">
+                <p class="kilos">10 kg</p>
+                <p class="kilos">25 €</p>
+            </div>
+
+        </div>
+
+        <div class="card_selection_text">
+
+            <div class="card_division2 _text">
+
+                <h5 class="division2_title_text">
+                    Banzaï grande taille
+                </h5>
+
+                <p class="division2_text_suite">
+                    De Saint Chamond (42400) à
+                    Issi-lès-Moulineaux 
+                </p>
+                <p class="division2_text_suite">
+                    A livrer entre le 03 mars et le 10 mars
+                </p>
+            </div>
+
+            <div class="division3_lugage"> <!-- cette partie est un petit formulaire de selection de bagage disponible case à cocher-->
+                <fieldset class="fieldset">
+                    <legend class="legend">
+                        choisi ton bagage disponible :
+                    </legend>
+                    <div class="bagage_id">
+                        <label for="bagage" class="bagage_css">bagage 1 -5kg</label>
+                        <input type="checkbox" id="bagage" name="bagage">
+                    </div>
+
+                    <div class="bagage_id">
+                        <label for="bagage" class="bagage_css">bagage 2 -5kg</label>
+                        <input type="checkbox" id="bagage" name="bagage">
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="selection_button">
+            <button class="order_button1">Envoyer une demande</button>
+        </div>
+
+</section>
+
+<section class="avis">
+
+    <div class="transporteur_avis">
+        <h2>Avis sur le transporteur</h2>
+    </div>
+<!-- les commentaires des avis sont le résultats d'un formulaire et du'une requête sql php pour les faires apparaitres mais 
+pour faire le positionnement on rempli des cards afin de pouvoir avoir un rendu cohérent du design-->
+    <div class="card_avis1">
+
+        <div class="card_avis_division1">
+            <div class="avis_items">
+                <img src="../img/smiley.PNG" alt="avatar du client laissant un avis"><!-- à redimensionner-->
+            </div>
+
+            <div class="avis_stars">
+                <img src="../img/etoile1.PNG" alt="notation du client"><!-- à redimensionner-->
+            </div>
+        </div>
+
+        <div class="card_avis_division2">
+
+            <div class="card_avis_text">
+
+                <p class="name_avis">
+                    Maryse - 24 ans
+                </p>
+
+                <p class="commentaire_avis">
+                    Livré en temps et en heure ! Efficace !
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+<!-- on crée une seconde card dans la partie avis sur le transporteur-->
+
+    <div class="card_avis2">
+
+        <div class="card_avis_division1">
+            <div class="avis_items">
+                <img src="../img/ecolo.jpg" alt="avatar du client laissant un avis"><!-- à redimensionner-->
+            </div>
+
+            <div class="avis_stars">
+                <img src="../img/etoile1.PNG" alt="notation du client"><!-- à redimensionner-->
+            </div>
+        </div>
+
+        <div class="card_avis_division2">
+
+            <div class="card_avis_text">
+
+                <p class="name_avis">
+                    Jean Louis- 39 ans
+                </p>
+
+                <p class="commentaire_avis">
+                    Bonne expérience même si plus long qu'un livreur traditionnel !
+                </p>
+
+            </div>
+        </div>
+    </div>
+<!-- on crée une troisième card dans la partie avis sur le transporteur-->
+
+    <div class="card_avis3">
+
+        <div class="card_avis_division1">
+            <div class="avis_items">
+                <img src="../img/logo-mascotte-logo-visage-panthere-noire-logo-vectoriel-personnage-animal-sauvage_194708-1296.webp" alt="avatar du client laissant un avis">
+            </div>
+
+            <div class="avis_stars">
+                <img src="../img/etoile1.PNG" alt="notation du client"> <!-- à redimensionner-->
+            </div>
+        </div>
+
+        <div class="card_avis_division2">
+
+            <div class="card_avis_text">
+
+                <p class="name_avis">
+                    Vanessa - 21 ans
+                </p>
+
+                <p class="commentaire_avis">
+                Trop cool et moins cher ! Je recommenserai !
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="avis_button">
+        <button class="avis_all">Voir tous les avis</button>
+    </div>
+
+</section>
+
+<!-- la section est finalement le même affichage que sur la page annonce on reprend donc la même structure-->
+<section class="others">
+
+<!--1ére card sur les autres annonces-->
+    <div class="card_search">
+        <div>
+            <h2 class="others_title">
+                Autres annonces sur ce trajet
+            </h2>
+        </div>
+        <div class="all_search">
+   
+            <div class="card_container_search">
+
+                <div class="card_division1">
+
+                    <div class="image_division1">
+                        <img src="../img/meuble.PNG" alt="Meuble à transporter"><!-- a redimensionner -->
+                    </div>
+                    <div>
+                        <img src="../img/etoile1.PNG" alt="notations clients"><!-- a redimensionner -->
+                    </div>
+
+                </div>
+
+                <div class="card_division2">
+                    <h4>Annonce 1</h4>
+
+                    <h5 class="division2_title">
+                        Meuble de taille moyenne
+                    </h5>
+
+                    <p class="division2_text">
+                        De Metz (57000) à
+                        Commercy (55000) 
+                    </p>
+                    <p>
+                        A livrer entre le 13 mars et le 19 mars
+                    </p>
+                </div>
+
+                <div class="kilos_price">
+                    <p class="kilos">10 kg</p>
+                    <p class="kilos">25 €</p>
+                </div>
+
+                <div class="button_annonce">
+                    <button class="tiret">></button>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- seconde card sur la section autres annonces-->
+
+        <div class="card_search">
+   
+            <div class="card_container_search">
+
+                <div class="card_division1">
+
+                    <div class="image_division1">
+                        <img src="../img/meuble4.jpg" alt="table à transporter"><!-- a redimensionner -->
+                    </div>
+                    <div>
+                        <img src="../img/etoile1.PNG" alt="notations clients"><!-- a redimensionner -->
+                    </div>
+
+                </div>
+
+                <div class="card_division2">
+                    <h4>Annonce 2</h4>
+
+                    <h5 class="division2_title">
+                        Table urbaine
+                    </h5>
+
+                    <p class="division2_text">
+                        De Metz (57000) à
+                        Nancy (54000) 
+                    </p>
+                    <p>
+                        A livrer entre le 17 mars et le 31 mars
+                    </p>
+                </div>
+
+                <div class="kilos_price">
+                    <p class="kilos">10 kg</p>
+                    <p class="kilos">25 €</p>
+                </div>
+
+                <div class="button_annonce">
+                    <button class="tiret">></button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--troisième card sur la partie autres annonces-->
+
+        <div class="card_search">
+   
+            <div class="card_container_search">
+
+                <div class="card_division1">
+
+                    <div class="image_division1">
+                        <img src="../img/meuble5.jpg" alt="Commode à transporter"><!-- a redimensionner -->
+                    </div>
+                    <div>
+                        <img src="../img/etoile1.PNG" alt="notations clients"><!-- a redimensionner -->
+                    </div>
+
+                </div>
+
+                <div class="card_division2">
+                    <h4>Annonce 3</h4>
+
+                    <h5 class="division2_title">
+                        Commode de rangement chambre d'enfant
+                    </h5>
+
+                    <p class="division2_text">
+                        De Metz (57000) à
+                        Berlin (allemagne) 
+                    </p>
+
+                    <p>
+                         A livrer entre le 15 mars et le 15 avril
+                    </p>
+                </div>
+
+                <div class="kilos_price">
+                    <p class="kilos">10 kg</p>
+                    <p class="kilos">25 €</p>
+                </div>
+
+                <div class="button_annonce">
+                    <button class="tiret">></button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+</main>
+<!-- ces cards sont normalement le résultat d'une requête mais dans notre exercice de positionnement et mise en page 
+j'ai simulé ces résultats obtenu en back end-->    
+</body>
+ <!-- nous reprenons notre footer puiqu'il reste identique au deux pages-->
+
+ <footer>
+    <div class="footer_menu">
+        <div class="logo_2travel">
+            <img src="../img/2travellogo.PNG" alt="logo 2Travel"> <!-- le logo devra avoir un lien ancre sur le haut de la page d'accueil'-->
+        </div>
+        <nav>
+            <ul class="ul_footer_menu">
+                <li class="li_footer_menu">Informations pratiques</li>
+                <li class="li_footer_menu">A propos</li>
+                <li class="li_footer_menu">Mentions légales</li>
+                <li class="li_footer_menu">conditions générales</li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+</html>

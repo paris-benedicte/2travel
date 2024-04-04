@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Travel_Annonce</title>
+    <!-- faire un lien vers un fichier css-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- faire un lien vers le fichier css mediaquery pour le responsive-->
+    <link rel="stylesheet" href="../css/styles_media.css">
+</head>
+<body>
+
+    <!-- comme demande dans l'énoncé du TP le menu de navigation en entête est exactement le même 
+    on reprend la même structure ce qui simplifiera le css-->
+
+    <header class="container_nav">
+
+        <img class="image" src="../img/2travellogo.PNG" alt="logo 2Travel"> <!-- à dredimensionner en css, trop grand-->
+    
+        <div class=" container_nav_ul_li">
+            <nav>
+                <ul class="ul_menu_nav">
+                    <li class="li_menu_nav" id="li_menu_nav1">connexion</li>
+                    <li class="li_menu_nav" id="li_menu_nav2">inscription</li>
+                        <img id ="loupe" src="../img/loupe.PNG" alt="Recherche de mots clés"> <!-- a redimensionner en css, trop grand-->
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- nous avons également le moteur de recherche qui sera principalement le même 
+    seul le positionnement sera différent ce qui veut dire que le contenu là sera le résultat d'une
+    requête sql en back end mais pour cet exercice nous allons faire une page normale, nous utiliserons ce fichier par la suite en back end-->
+<main class="main1">
+<section class="search_moteur1"> <!-- on devra cette fois mettre un flex=column pour modifier le positionnement row-->
+        <div class="container_search1">
+
+            <form action="" method="get" class="input_form">
+
+                <div class="formulaire1"> <!-- Je mets une div avec une class afin depouvoir la cibler dans mon css-->
+
+                    <label for="pays"></label>
+
+                        <select name="pays" id="pays_id">
+                            <option value="pays">pays</option>
+                            <option value="pays">France</option>
+                            <option value="pays">Allemagne</option>
+                            <option value="pays">Luxembourg</option>
+                            <option value="pays">Belgique</option>
+                            <option value="pays">Suisse</option>
+                        </select>
+
+                    <label for="kilos"></label>
+                        <select name="kilos" id="kilos">
+                            <option value="kilos">Kilos</option>
+                            <option value="0-5kg">0-5kg</option>
+                            <option value="5-10kg">5-10kg</option>
+                            <option value="10kg-15kg">10kg-15kg</option>
+                            <option value="+ 15kg">+ 15kg</option>
+                        </select>
+
+                    <label for="date"></label>
+                        <input type="date" id="date" name="date">
+                        
+                        
+                    <label for="search" placeholder="search"></label>
+                        <input type="text" id="search" name="search" placeholder="search">
+                </div>
+            </form>
+
+        </div>
+    <div class="section_search_annonces">
+
+        <div class="card_search"><!--cette partie est le résultat de la requête sql en back end normalement
+                ici je vais juste faire plusieurs cards pour pouvoir faire un résultat fictif de page pour le client
+                je avis reprendre cette structure pour les autres cards-->
+
+            <h2 class="first_title_page">
+                Dernières annonces
+            </h2>
+    
+            <div class="all_search">
+
+                        <div class="card_container_search">
+
+                            <div class="card_division1">
+
+                                <div class="image_division1">
+                                    <img src="../img/Bonsai-Tree-In-Red-Planter-57248656-1.png" alt="Banzaï à transporter"><!-- a redimensionner -->
+                                </div>
+                                <div>
+                                    <img src="../img/etoile.PNG" alt="notations clients"><!-- a redimensionner -->
+                                </div>
+
+                            </div>
+
+                            <div class="card_division2">
+                                <h4>Annonce 1</h4>
+
+                                <h5 class="division2_title">
+                                    Banzaï grande taille
+                                </h5>
+
+                                <p class="division2_text">
+                                    De Saint Chamond (42400) à
+                                    Issi-lès-Moulineaux.
+                                </p>
+                                <p>
+                                    A livrer entre le 03 mars et le 10 mars
+                                </p>
+                            </div>
+
+                            <div class="kilos_price">
+                                <p class="kilos">10 kg</p>
+                                <p class="kilos">25 €</p>
+                            </div>
+
+                            <div class="button_annonce">
+                                <button class="tiret">></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                            <!--seconde card issue de la requête sql-->
+
+                     <div class="card_search">
+   
+                        <div class="card_container_search">
+   
+                            <div class="card_division1">
+   
+                                <div class="image_division1">
+                                    <img src="../img/meuble.PNG" alt="Meuble à transporter"><!-- a redimensionner -->
+                                </div>
+                                <div>
+                                    <img src="../img/etoile1.PNG" alt="notations clients"><!-- a redimensionner -->
+                                </div>
+   
+                            </div>
+   
+                            <div class="card_division2">
+                                <h4>Annonce 2</h4>
+   
+                                <h5 class="division2_title">
+                                    Meuble de taille moyenne
+                                </h5>
+   
+                                <p class="division2_text">
+                                    De Metz (57000) à
+                                     Commercy (55000) 
+                                </p>
+                                <p>
+                                    A livrer entre le 13 mars et le 19 mars
+                                </p>
+                            </div>
+   
+                            <div class="kilos_price">
+                                <p class="kilos">10 kg</p>
+                                <p class="kilos">25 €</p>
+                            </div>
+   
+                            <div class="button_annonce">
+                                <button class="tiret">></button>
+                            </div>
+   
+                        </div>
+   
+                    </div>
+
+
+                <!-- troisiéme annonce issue de la requête sql en php back end-->
+
+                    <div class="card_search">
+   
+                        <div class="card_container_search">
+
+                        <div class="card_division1">
+
+                            <div class="image_division1">
+                                <img src="../img/meuble2.jpg" alt="Chaise à transporter"><!-- a redimensionner -->
+                            </div>
+                            <div>
+                                <img src="../img/etoile1.PNG" alt="notations clients"><!-- a redimensionner -->
+                            </div>
+
+                        </div>
+
+                        <div class="card_division2">
+                            <h4>Annonce 3</h4>
+
+                            <h5 class="division2_title">
+                                Chaise de créateur haute qualité
+                            </h5>
+
+                            <p class="division2_text">
+                                De Bouzonville (57320) à
+                                Metz (57000) 
+                            </p>   
+                            <p>
+                                A livrer entre le 05 mars et le 10 mars
+                            </p>
+                        </div>
+
+                        <div class="kilos_price">
+                            <p class="kilos">10 kg</p>
+                            <p class="kilos">25 €</p>
+                        </div>
+
+                        <div class="button_annonce">
+                            <button class="tiret">></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- quatriéme annonce/cards issue de la requête sql en php back end-->
+
+                <div class="card_search">
+   
+                    <div class="card_container_search">
+
+                        <div class="card_division1">
+
+                            <div class="image_division1">
+                                <img src="../img/meuble3.jpg" alt="Miroir à transporter"> <!-- a redimensionner -->
+                            </div>
+                            <div>
+                                <img src="../img/etoile1.PNG" alt="notations clients"><!-- a redimensionner -->
+                            </div>
+
+                        </div>
+
+                        <div class="card_division2">
+                            <h4>Annonce 4</h4>
+
+                            <h5 class="division2_title">
+                                Miroir ancien exige bon transporteur
+                            </h5>
+
+                            <p class="division2_text">
+                                De Metz (57000) à
+                                Versailles(78000) 
+                            </p>
+                            <p>    
+                                A livrer entre le 02 mars et le 20 mars
+                            </p>
+                        </div>
+
+                        <div class="kilos_price">
+                            <p class="kilos">10 kg</p>
+                            <p class="kilos">25 €</p>
+                        </div>
+
+                        <div class="button_annonce">
+                            <button class="tiret">></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                    <!-- cinquième card issu de la recherche sql dans le moteur de recherche du site en php back end-->
+
+                <div class="card_search">
+   
+                    <div class="card_container_search">
+
+                        <div class="card_division1">
+
+                            <div class="image_division1">
+                                <img src="../img/sapin.jpg" alt="Sapin de noel à transporter"> <!-- à redimensionner -->
+                            </div>
+                            <div>
+                                <img src="../img/etoile1.PNG" alt="notations clients"><!--à redimensionner -->
+                            </div>
+
+                        </div>
+
+                        <div class="card_division2">
+                            <h4>Annonce 5</h4>
+
+                            <h5 class="division2_title">
+                                sapin de Noël à transporter sans décoration
+                            </h5>
+
+                            <p class="division2_text">
+                                De Sarreguemines (57200) à
+                                Marseille(13000) 
+                            </p>
+                            <p>   
+                                A livrer entre le 02 mars et le 20 avril
+                            </p>
+                        </div>
+
+                        <div class="kilos_price">
+                            <p class="kilos">10 kg</p>
+                            <p class="kilos">25 €</p>
+                        </div>
+
+                        <div class="button_annonce">
+                            <button class="tiret">></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div> 
+    <!-- on doit faire un tableau qui comprend la paginationla pagination se faire normalement en php en back end
+    ici nous allons uniquement représenter la pagination en statique pour créer son effet visuel et son codage en html et css-->
+    <section class="tableau">
+
+        <table>
+            <td class="table_1">
+                <th><button class="button_table"><</button></th>
+                <th class="table_2">1</th>
+                <th class="table_2">2</th>
+                <th class="table_2">3</th>
+                <th class="table_2">4</th>
+                <th class="table_2">5</th>
+                <th><button class="button_table">></button></th>
+            </td>
+        </table>
+
+    </section>
+</section>
+    
+</main>
+</body>
+
+<!-- le footer est le même sur toutes les pages selon la demande de l'énoncé, il n'y a donc qu'à reprendre la même structure-->
+<footer>
+    <div class="footer_menu">
+        <div class="logo_2travel">
+            <img src="../img/2travellogo.PNG" alt="logo 2Travel"> <!-- le logo devra avoir un lien ancre sur le haut de la page d'accueil'-->
+        </div>
+        <nav>
+            <ul class="ul_footer_menu">
+                <li class="li_footer_menu" id="li_footer_menu1">Informations pratiques</li>
+                <li class="li_footer_menu" id="li_footer_menu2">A propos</li>
+                <li class="li_footer_menu" id="li_footer_menu3">Mentions légales</li>
+                <li class="li_footer_menu" id="li_footer_menu4">conditions générales</li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</html>

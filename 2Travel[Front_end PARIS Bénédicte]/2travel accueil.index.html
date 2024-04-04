@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Travel_Accueil</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!--lien vers le fichier css-->
+    <link rel="stylesheet" href="./css/styles_media.css"> <!-- lien vers le fichier css_media pour le responsive design-->
+
+</head>
+
+
+<body>
+<!-- on crée notre menu de navigation selon les critères du cahier des charges-->
+<!-- ici le client demande d'avoir uniquement un bouton de connexion et un bouton cliquable d'inscription-->
+
+<header class="container_nav">
+
+    <img class="image" src="./img/2travellogo.PNG" alt="logo 2Travel"> <!-- à dredimensionner en css, trop grand-->
+
+    <div class="container_nav_ul_li">
+        <nav>
+            <ul class="ul_menu_nav">
+                <li class="li_menu_nav" id="li_menu_nav1">connexion</li>
+                <li class="li_menu_nav" id="li_menu_nav2">inscription</li>
+                    <img id ="loupe" src="./img/loupe.PNG" alt="Recherche de mots clés"> <!-- a redimensionner en css, trop grand-->
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="photo_accueil">
+        <img src="./img/2travelAccueil.jpg" alt="Selfie d'une livraison entre particulier"><!-- a redimensionner en css, trop grand-->
+    </div>
+
+<!-- je crée le formulaire de recherche dans un section -->
+    <section class="search_moteur"> <!-- cete section est un formulaire de recherche select et option-->
+
+        <h1>Economisez sur vos kilos à transporter !!!</h1>
+
+        <div class="container_search">
+
+            <form action="" method="get" class="input_form">
+
+                <div class="formulaire"> <!-- Je mets une div avec une class afin depouvoir la cibler dans mon css-->
+
+
+                        <label for="pays"></label>
+
+                            <select name="pays" id="pays_id">
+                                <option value="pays"></option>
+                                <option value="pays">France</option>
+                                <option value="pays">Allemagne</option>
+                                <option value="pays">Luxembourg</option>
+                                <option value="pays">Belgique</option>
+                                <option value="pays">Suisse</option>
+                            </select>
+                   
+
+                        <label for="kilos"></label>
+                            <select name="kilos" id="kilos">
+                                <option value="kilos"></option>
+                                <option value="0-5kg">0-5kg</option>
+                                <option value="5-10kg">5-10kg</option>
+                                <option value="10kg-15kg">10kg-15kg</option>
+                                <option value="+ 15kg">+ 15kg</option>
+                        </select>
+                    
+
+                    
+                        <label for="date"></label>
+                            <input type="date" id="date" name="date">
+                        
+                    
+
+                    
+                        <label for="search"></label>
+                            <input type="text" id="search" name="search" placeholder="search">
+                    
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+<!-- je crée la seconde partie de la maquette qui contient-->
+
+    <section class="transporteur">
+
+        <img src="./img/transporteur.jpg" alt="transporteur de colis">
+
+        <div class="transporteur_second">
+            <h3 class="transporteur_title">
+                Gagnez de l'argent avec vos bagages inutilisés !
+            </h3>
+
+            <p class="transporteur_text">
+                financez vos trajets en toute liberté avec 2Travel !
+            </p>
+
+            <div class="transporteur_button">
+                <button class="button1_transporteur">Devenir Transporteur</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="customer">
+
+        <div class="customer_order">
+
+            <h3 class="customer_title"> 
+                Votre colis livré moins cher !
+            </h3>
+
+            <p class="customer_text">
+                Faites-vous livrer en toute simplicité
+                pour un prix défiant toute concurrence
+            </p>
+
+            <div class="customer_button">
+                <button class="button1_customer">Voir les offres</button>
+            </div>
+           
+        </div>
+
+        <img src="./img/client.jpg" alt=" cliente enceinte se fait livrer">
+    </section>
+
+    <section class="items"> <!-- image et card à redimensionner en css-->
+
+        <div class="card_items">
+            
+                <div class="image_items">
+                    <img src="./img/vert.PNG" alt="le transport économique" >
+                </div>
+
+            <p class="items_text">
+                Livraison économique,
+                2Travel est un service
+                jusqu'à 80% moins cher !
+            </p>
+        </div>
+
+        <div class="card_items">
+
+            <div class="image_items">
+                <img src="./img/ecologie.PNG" alt="le transport écologique">
+            </div>
+
+            <p class="items_text">
+                Livraison écologique
+                préservez la planètre 
+                avec 2Travel !!
+            </p>
+        </div>
+
+        <div class="card_items">
+
+            <div class="image_items">
+                <img src="./img/livraison.PNG" alt=" la livraison à domicile avec assurance">
+            </div>
+
+            <p class="items_text">
+                Assurance 2Travel
+                livrez et recevez en toute sécurité
+                Assurez vos livraisons avec 2 Travel !!
+            </p>
+
+        </div>
+    </section>
+
+    <section class="action_insc">
+
+        <div class="action2_insc_container">
+
+            <button class="button_insc">inscription</button>
+
+            <button class="button_insc">Connexion</button>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div class="footer_menu">
+        <div class="logo_2travel">
+            <img src="./img/2travellogo.PNG" alt="logo 2Travel"> <!-- le logo devra avoir un lien ancre sur le haut de la page d'accueil'-->
+        </div>
+        <nav>
+            <ul class="ul_footer_menu">
+                <li class="li_footer_menu" id="li_footer_menu1">Informations pratiques</li>
+                <li class="li_footer_menu" id="li_footer_menu2">A propos</li>
+                <li class="li_footer_menu" id="li_footer_menu3">Mentions légales</li>
+                <li class="li_footer_menu" id="li_footer_menu4">conditions générales</li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+    
+</body>
+</html>
